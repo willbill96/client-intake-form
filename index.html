@@ -176,10 +176,10 @@
   </div>
 </div>
 
-<div class="footer">&copy; Leffew Law Firm &nbsp;|&nbsp; This form is confidential &nbsp;|&nbsp; william@leffewlegal.com</div>
+<div class="footer">&copy; Leffew Law Firm &nbsp;|&nbsp; This form is confidential &nbsp;|&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="76011f1a1a1f171b361a13101013011a1311171a5815191b">[email&#160;protected]</a></div>
 <div class="toast" id="toast"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const LAWYER_EMAIL = 'william@leffewlegal.com';
   const BACKEND_URL  = 'https://hook.us2.make.com/bco4efs48vgnijlan9ndr9fh2xo1xvea'; // Paste your backend endpoint here when ready
 
@@ -339,6 +339,7 @@
         caseNumber:   document.getElementById('case-number').value.trim()
       },
       providers: list,
+      providersFormatted: formatProvidersText(list),
       submittedAt: new Date().toISOString()
     };
   }
@@ -400,9 +401,4 @@
 </script>
 
 <!-- Google Maps loads asynchronously. When fully ready, it automatically
-     calls initApp() via the callback= parameter — this is what prevents
-     the "google is not defined" error. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKUrp_GdDPE_o3lpffklT9Kmh0mWqykoY&libraries=places&callback=initApp" async defer></script>
-
-</body>
-</html>
+     calls initApp() via the callback= parameter — thi
