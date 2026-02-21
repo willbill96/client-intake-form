@@ -1022,7 +1022,7 @@
         showToast('Submitting\u2026');
         fetch(BACKEND_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'text/plain' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         })
         .then(function(r) {
