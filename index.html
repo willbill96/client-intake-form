@@ -938,8 +938,9 @@
     document.getElementById('confirm-modal-btn').textContent = confirmLabel;
     _pendingAction = onConfirm;
     document.getElementById('confirm-modal-btn').onclick = function() {
+      var action = _pendingAction;
       closeConfirmModal();
-      if (_pendingAction) _pendingAction();
+      if (action) action();
     };
     document.getElementById('confirm-modal').classList.add('show');
   }
